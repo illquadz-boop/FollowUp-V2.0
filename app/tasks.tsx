@@ -548,7 +548,7 @@ export function TaskBoard() {
                         <div className="task-card-top">
                           <span className="task-key">
                             <CheckSquare size={14} />
-                            No.{tasks.findIndex((x) => x.id === t.id) + 1}
+                            FU-{tasks.findIndex((x) => x.id === t.id) + 101}
                           </span>
                           <GripVertical className="grip" size={15} />
                         </div>
@@ -580,6 +580,8 @@ export function TaskBoard() {
                         {t.meetingId && (
                           <div className="task-meeting">
                             <FileText size={12} />
+                            FU-{tasks.findIndex((x) => x.id === t.id) + 101}
+                            {' · '}
                             {meetings.find((m) => m.id === t.meetingId)
                               ?.title || '회의 연결 없음'}
                           </div>
