@@ -12,6 +12,7 @@
 - [전체 API 계약](docs/API-CONTRACT.md)
 - [검증 범위와 운영 전 점검](docs/VERIFICATION.md)
 - [GitHub 업로드 및 릴리스 절차](docs/GITHUB-RELEASE.md)
+- [오늘의 TIL](docs/TIL.md)
 
 ## 바로 사용하기
 
