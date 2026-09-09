@@ -580,6 +580,8 @@ export function TaskBoard() {
                         {t.meetingId && (
                           <div className="task-meeting">
                             <FileText size={12} />
+                            FU-{tasks.findIndex((x) => x.id === t.id) + 101}
+                            {' · '}
                             {meetings.find((m) => m.id === t.meetingId)
                               ?.title || '회의 연결 없음'}
                           </div>
