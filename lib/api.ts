@@ -17,7 +17,7 @@ import {
 import { createDemoRepository } from './demo-repository';
 import type { Repository } from './repository';
 
-export const isDemo = import.meta.env?.VITE_DATA_MODE !== 'api';
+export const isDemo = import.meta.env?.VITE_DATA_MODE === 'demo';
 export function createHttpRepository(client: AxiosInstance): Repository {
   async function request<S extends z.ZodTypeAny>(
     method: string,

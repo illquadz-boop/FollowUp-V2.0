@@ -1,5 +1,7 @@
 # FollowUp v2.0
 
+> **2026-09-10 실제 API 연동 추가:** 기본 실행은 EC2 백엔드 연결 모드입니다. [실제 연동 구조·실행 방법·검증 결과](docs/LIVE-API-INTEGRATION.md)를 먼저 확인하세요. 아래 기존 데모·정적 배포·세션 계약 설명은 초기 v2.0 기록입니다. 현재는 서버 중계 경로가 필요하며 정적 파일만으로 배포할 수 없습니다. 회의 참여자 변경과 업무 담당자/마감일 해제는 백엔드 결함이 확인되어 서버 수정이 필요합니다.
+
 첨부된 `FollowUpApp.jsx`의 원본 로고와 페이지 구성을 바탕으로 만든 회의·후속 업무 관리 프론트엔드입니다. React + TypeScript, Vite/Vinext, React Router, TanStack Query, React Hook Form, Zod, Axios를 사용합니다. 백엔드 서버는 포함하지 않습니다.
 
 패키지 버전은 `2.0.0`, Git 릴리스 태그는 `v2.0`입니다. 이번 버전은 구현된 프론트엔드 소스와 백엔드 통합 문서를 함께 정리한 버전이며, Spring Boot·MySQL·실제 AI가 연결된 풀스택 완성본을 의미하지 않습니다.
@@ -12,7 +14,6 @@
 - [전체 API 계약](docs/API-CONTRACT.md)
 - [검증 범위와 운영 전 점검](docs/VERIFICATION.md)
 - [GitHub 업로드 및 릴리스 절차](docs/GITHUB-RELEASE.md)
-- [오늘의 TIL](docs/TIL.md)
 
 ## 바로 사용하기
 
