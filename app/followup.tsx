@@ -38,6 +38,7 @@ import { MeetingList, MeetingDetail, MeetingEditorRoute } from './meetings';
 import { TaskBoard } from './tasks';
 import { useIdentity } from './data';
 import { Loading, ErrorState, EmptyState, Btn, useAction } from './ui';
+import { ApiRouting } from './api-app';
 
 class ErrorBoundary extends Component<
   { children: ReactNode },
@@ -228,9 +229,7 @@ export default function FollowUpApp() {
     <ErrorBoundary>
       <QueryClientProvider client={client}>
         <Toaster>
-          <HashRouter>
-            <Routing />
-          </HashRouter>
+          <HashRouter>{isDemo ? <Routing /> : <ApiRouting />}</HashRouter>
         </Toaster>
       </QueryClientProvider>
     </ErrorBoundary>
